@@ -1,0 +1,565 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    background-color: green;
+    color: white;
+}
+
+
+header{
+    height: 100px;
+    background-color: lightgray;
+    width: 100%;
+    display: flex;
+}
+
+.logo img{
+    width: auto;
+    height: 70px;
+}
+
+.menu{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.green{
+    width: 50%;
+    height: 50px;
+    background-color: green;
+}
+
+/* banner Code start here */
+
+.container{
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* @media screen and (max-width:1024px) {
+
+    .container{
+       flex-direction: column;
+    
+    }
+    .text{
+        width: 100% !important;
+    }
+    .image{
+        width: 100% !important;
+    
+    }
+
+} */
+
+.text{
+    width: 50%;
+    padding: 0px 5%;
+}
+.text h1 {
+    font-size: 3.7em;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 54px;
+    letter-spacing: -5px;
+    word-spacing: 14px;
+
+}
+
+.text h1 span{
+  color: blueviolet;
+  font-size: inherit;
+  
+}
+
+
+.text p{
+    color: #848484;
+    padding: 15px 0px;
+}
+
+.image{
+    width: 50%;
+
+}
+
+.image img{
+    filter: drop-shadow(-10px -10px 20px green );
+}
+
+.btn{
+    background-color: transparent;
+    color: blueviolet;
+    padding: 10px 30px;
+    border: 2px solid blueviolet;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+/* .btn:hover{
+    background-color: aqua;
+    transition: ease-in 2s;
+} */
+
+
+.banner{
+    height: 500px;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    background-image: url(images/photo-1461749280684-dccba630e2f6.avif);
+    background-size: 50%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    font-size: inherit;
+}
+
+
+.wrapper{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/photo-1461749280684-dccba630e2f6.avif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.wrapper h5{
+    font-size: 9em;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    z-index: 13;
+
+
+    
+}
+
+.overlay{
+    height:500px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    z-index: 12;
+}
+
+
+.boxes{
+    display: flex;
+    gap: 20px;
+    padding: 0px 40px;
+    height: 500px;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.box{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+/* {
+    position: relative;
+    position: absolute;
+
+
+    position: sticky;
+
+    position: fixed;
+
+    position: static;
+
+} */
+
+
+
+.box_2{
+    background-color: teal;
+    color: white;
+    background-image: url(images/altumcode-FoTs3ntRoIs-unsplash.jpg);
+    background-size: 100%;
+    background-position: center; 
+    position: relative; 
+    overflow: hidden;
+
+ 
+    
+}
+
+.over{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    opacity:0.50;
+    left: 0px;
+    
+}
+
+
+
+.box_2:hover .over{
+    opacity: 0.7;
+    transition: ease-in 0.4s;
+}
+
+.box_2:hover{
+    background-size: 120%;
+    transition: ease-in 0.5s;
+   
+
+}
+
+
+.box_2:hover i.bi.bi-apple{
+    transition: ease-in 0.5s;
+    transform: translateX(0px);
+}
+
+
+i.bi.bi-apple {
+    color: white;
+    transform: translateX(50px);
+    position: absolute;
+    font-size: 2em;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9;
+}
+
+.box_2 h1{
+    color: white;
+    position: relative;
+    z-index: 9;
+}
+
+.box_2 p{
+    position: relative;
+    z-index: 9;
+}
+
+
+
+
+
+
+
+.box_3:hover{
+    background-color: teal;
+    color: white;
+    transition: ease-in 2s;
+}
+
+
+
+
+
+
+
+/* .box:hover{
+    background-color: white;
+    transform: translateY(-10px);
+    transition: ease .5s;
+    box-shadow: -2px 4px 13px #0000001c;
+} */
+
+
+
+
+
+
+.box h1{
+    font-size: 1.4em;
+}
+
+
+header{
+    position: sticky;
+    z-index: 999;
+}
+
+
+
+.icon{
+    background-color: teal;
+    color: white;
+    padding:10px 20px;
+    margin: 40px;
+    transform: rotate(90deg);
+    
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    position: fixed;
+    right: 0px;
+    top:20%;
+    z-index: 99;
+}
+
+
+
+
+
+.back_to_top{
+    background-color: teal;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+.back_to_top a{
+    color: white;
+}
+
+i.bi.bi-arrow-bar-up {
+    font-size: 2em;
+}
+
+
+
+.banner_2{
+    padding: 100px;
+ background-image: url(images/photo-1461749280684-dccba630e2f6.avif);
+ background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.banner_2::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+
+.banner_2 h1{
+    font-size: 6em;
+    z-index: 9999;
+    position: relative;
+    color: white;
+
+}
+.banner_2 p{
+    position: relative;
+    color: white;
+}
+
+.banner_2 p::first-line{
+    color: red;
+    background-color: white;
+    font-size: 2em;
+    border-radius: 10px;
+    font-weight: 800;
+
+}
+
+.banner_3{
+    padding: 100px;
+}
+
+
+.banner_3 p:hover{
+    color: green;
+}
+
+
+
+ul li:hover{
+    color: green;
+    cursor: pointer;
+    border-bottom: 1px solid green;
+}
+
+
+.wrapper h5::before{
+    content: "<h5>";
+    position: absolute;
+    top: -10px;
+    font-size: 50px;
+    left: -30px;
+    color: #848484;
+    font-family: "Clicker Script", cursive;
+    
+}
+
+.box_1{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.box_1:hover {
+    background-color: orange;
+    color: white;
+    transition: ease-in 0.4s;
+    box-shadow: 0px 8px 20px 0px #0000004d;
+}
+
+i.bi.bi-emoji-heart-eyes {
+    font-size: 2em;
+    position: absolute;
+    bottom: 9px;
+    right: 0px;
+    transform: translateX(35px);
+}
+
+.box_1:hover i.bi.bi-emoji-heart-eyes{
+    transform: translateX(-15px);
+    transition: ease-in 0.4s;
+
+}
+
+.banner_3 p:nth-child(2){
+    color: red;
+}
+
+table tr td, th{
+    padding: 5px 10px;
+}
+
+
+
+/* table tr:nth-child(even){
+    background-color: teal;
+    color: white;
+}
+
+
+table tr:nth-child(odd){
+    background-color: white;
+    color: teal;
+}
+ */
+
+
+ table tr td:nth-child(even){
+    color: white;
+    background-color: teal;
+}
+
+
+.menu ul li:nth-last-child(1){
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+
+.banner_4{
+    background-color: teal;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner_4 h1{
+    font-size: 4em;
+ 
+}
+
+.banner_4 img{
+   height: 300px;
+   animation: slideIn;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-iteration-count: 5;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+
+
+
+
+
+    
+}
+.banner_4 h2{
+    font-size: 2em;
+
+}
+
+
+@keyframes slideIn {
+
+
+   0%{
+    transform: translateY(0px);
+
+   }
+
+   50%{
+    transform: scale(9);
+
+
+   }
+
+   100%{
+    transform: rotate(180deg);
+
+   }
+    
+}
